@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+section {
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2563eb;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+}
+
+.pic{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    /* border: 7px solid rgb(7, 0, 0);
+    border-top: 7px solid rgb(255, 255, 255); */
+    margin-left: 120px;
+    background-image: url("harshitp.png");
+    background-size: cover;
+   
+}
+
+.loader{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 7px solid rgb(252, 252, 253);
+    border-top: 7px solid rgb(9, 0, 0);
+    animation: Spinb .8s linear 0s infinite normal;
+
+}
+
+@keyframes Spinb {
+    from {
+        transform: rotate(0deg);}
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    .loader:hover
+    {
+         border: 7px solid rgb(252, 252, 253);
+        border-top-color: #ff6600;
+        animation: Spinb .8s linear 0s infinite normal;
+    }
+
+.mnt{
+    height: 10px;
+    width: 22px;
+
+}
+
+
+.header h1 {
+    font-size: 32px;
+}
+
+.header p {
+    opacity: 0.9;
+}
+
+.contact {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+}
+
+
+.grid {
+    display: flex;
+    gap: 30px;
+}
+
+.left {
+    flex: 1;
+    background-color: #5ad6a9;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.right {
+    flex: 1;
+     background-color: #5ad6a9;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #e0e7ff;
+    color: #1e3a8a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job-title {
+    font-weight: 600;
+}
+
+.job-date {
+    font-size: 13px;
+    color: gray;
+}
+
+.hire{
+    text-align: center;
+    padding: auto;
+    background-color: dodgerblue;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+}
+.hire a{
+    color: white;
+    
+}
+.hire a:hover{
+    text-decoration: none;
+    
+}
+
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+</style>
